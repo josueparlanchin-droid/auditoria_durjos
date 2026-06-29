@@ -4,7 +4,11 @@ import Resumen from './components/Resumen';
 import Sqli from './components/InyeccionSQL';
 import Xss from './components/XSS';
 import Comandos from './components/Comandos';
-import Promps from './components/Promps'; // Asegúrate de tener este componente creado
+import Activos from './components/Activos';
+import Matriz from './components/Matriz';
+import Controles from './components/Controles';
+import Recuperacion from './components/Recuperacion';
+import Prompts from './components/Prompts'; // Corregido el nombre a Prompts.jsx
 
 function App() {
   return (
@@ -20,7 +24,6 @@ function App() {
             </div>
           </div>
           <div className="text-center sm:text-right">
-            {/* Enlace a tu GitHub añadido aquí */}
             <a 
               href="https://github.com/josueparlanchin-droid/auditoria_durjos" 
               target="_blank" 
@@ -46,13 +49,17 @@ function App() {
           </div>
         </div>
 
-        {/* Renderizado de Secciones */}
+        {/* Renderizado de TODAS las secciones */}
         <section className="space-y-6">
           <Resumen />
           <Sqli />
           <Xss />
           <Comandos />
-          <Promps /> {/* Bitácora integrada */}
+          <Activos />
+          <Matriz />
+          <Controles />
+          <Recuperacion />
+          <Prompts />
         </section>
       </main>
 

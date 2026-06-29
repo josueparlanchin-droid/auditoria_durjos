@@ -1,11 +1,13 @@
 # 9. Bitácora de Uso de Inteligencia Artificial
 
-Durante el desarrollo de esta auditoría, se utilizaron asistentes de IA (como GitHub Copilot y Gemini) como apoyo operativo.
+Para esta evaluación, el uso de IA fue clave para agilizar la construcción de los componentes en React y la estructuración de los informes en Markdown[cite: 3].
 
-* **Prompt 1:** *"Genera un resumen ejecutivo para una auditoría web de una universidad ficticia llamada Universidad del Pacífico, enfocándote en la protección de notas y pagos."*
-  * **Resultado/Corrección:** La IA entregó un texto muy largo. Se recortó y ajustó para que encajara con el tono técnico del informe y la brevedad requerida.
-* **Prompt 2:** *"¿Cómo implemento consultas parametrizadas en Node.js para mitigar Inyección SQL?"*
-  * **Resultado/Corrección:** Entregó un ejemplo claro, pero no especificó el motor de base de datos. Se le corrigió para que adaptara el código al contexto específico de nuestro stack tecnológico.
+* **Prompt 1 (Sección Resumen):** "Crea un componente React con Tailwind para el Resumen de la Universidad del Pacífico. Usa un icono de FileText y un diseño de tarjeta profesional."
+  * **Uso:** Aceptado íntegramente. Ayudó a definir el layout base de toda la web.
+* **Prompt 2 (Sección Vulnerabilidades):** "Explica técnicamente la inyección de comandos en DVWA usando el payload 127.0.0.1; cat /etc/passwd y sugiere mitigaciones basadas en OWASP."
+  * **Uso:** El código base fue aceptado. Se corrigió manualmente la parte de "mitigación" para que fuera específica al contexto de la universidad y no genérica[cite: 3].
+* **Prompt 3 (Depuración):** "Tengo un error 'Failed to resolve import' en App.jsx, revisa la estructura de directorios."
+  * **Uso:** Ayudó a identificar que los componentes no estaban bien referenciados. Se corrigieron las rutas de importación.
 
 **Reflexión Final:**
-La IA es una herramienta excelente para acelerar la creación de código base (como los componentes en React) y estructurar los informes en Markdown. Sin embargo, en el ámbito de la ciberseguridad, no se puede confiar ciegamente en ella; es imperativo auditar sus respuestas, ya que en ocasiones puede sugerir código que funcionalmente sirve, pero que estructuralmente sigue siendo vulnerable (como concatenar strings en vez de parametrizar).
+El uso de IA permitió optimizar el tiempo de desarrollo. Sin embargo, la supervisión humana es indispensable; sin la validación técnica, la IA tiende a sugerir soluciones genéricas que no atacan la causa raíz. La responsabilidad técnica del código final y de las políticas de seguridad implementadas sigue siendo exclusiva del auditor.

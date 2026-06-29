@@ -4,6 +4,7 @@ import Resumen from './components/Resumen';
 import Sqli from './components/InyeccionSQL';
 import Xss from './components/XSS';
 import Comandos from './components/Comandos';
+import Promps from './components/Promps'; // Asegúrate de tener este componente creado
 
 function App() {
   return (
@@ -19,7 +20,15 @@ function App() {
             </div>
           </div>
           <div className="text-center sm:text-right">
-            <p className="text-sm font-semibold text-blue-400">Auditor: Josué Durand P.</p>
+            {/* Enlace a tu GitHub añadido aquí */}
+            <a 
+              href="https://github.com/josueparlanchin-droid/auditoria_durjos" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm font-semibold text-blue-400 hover:text-blue-300 underline cursor-pointer"
+            >
+              Auditor: Josué Durand P.
+            </a>
             <p className="text-xs text-slate-400">Evaluación N°3 • INACAP Valparaíso</p>
           </div>
         </div>
@@ -27,7 +36,6 @@ function App() {
 
       {/* Cuerpo Principal del Informe */}
       <main className="max-w-5xl mx-auto px-4 py-8">
-        {/* Banner Informativo */}
         <div className="bg-slate-800 text-slate-100 p-4 rounded-xl mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 shadow-inner">
           <div>
             <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">Entidad Evaluada:</span>
@@ -44,12 +52,12 @@ function App() {
           <Sqli />
           <Xss />
           <Comandos />
+          <Promps /> {/* Bitácora integrada */}
         </section>
       </main>
 
-      {/* Footer */}
       <footer className="bg-slate-900 text-slate-500 text-center py-6 border-t border-slate-800 text-xs">
-        <p>© 2026 Auditoría de Seguridad de la Información - Aplicación Académica Desplegada en Vercel</p>
+        <p>© 2026 Auditoría de Seguridad de la Información - Aplicación Académica</p>
       </footer>
     </div>
   );

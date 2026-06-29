@@ -1,17 +1,17 @@
-# 6. Matriz de Riesgo y Mapa de Calor
-Cruzando la probabilidad de que nos ataquen contra el impacto que tendría en la universidad, la matriz queda así:
+# Matriz de Riesgo y Mapa de Calor
+Si cruzamos la probabilidad de sufrir un ataque con el daño que causaría, el panorama para la universidad es el siguiente:
 
 * **Inyección SQL (SQLi):**
-  - Probabilidad: Media
-  - Impacto: Crítico (Podrían robar la base de datos entera o alterar las notas a voluntad).
-  - Nivel de Riesgo: **EXTREMO (Rojo)**.
+  - **Probabilidad:** Media.
+  - **Impacto:** Crítico (Nos pueden robar toda la base de datos o cambiar las notas).
+  - **Nivel de Riesgo:** **EXTREMO (Rojo)**. Hay que arreglarlo ya.
 
 * **Cross-Site Scripting (XSS):**
-  - Probabilidad: Alta (Es muy fácil enviar links manipulados por correo institucional).
-  - Impacto: Alto (Permite robar sesiones y suplantar la identidad de un profesor o directivo).
-  - Nivel de Riesgo: **ALTO (Naranja)**.
+  - **Probabilidad:** Alta (Es muy fácil engañar a un profe con un link falso por correo).
+  - **Impacto:** Alto (Permite robar la sesión de los docentes).
+  - **Nivel de Riesgo:** **ALTO (Naranja)**.
 
 * **Inyección de Comandos:**
-  - Probabilidad: Baja (Requiere condiciones muy específicas en la configuración del servidor web).
-  - Impacto: Crítico (Toma de control total del servidor de la universidad, pudiendo borrar todo).
-  - Nivel de Riesgo: **ALTO (Naranja)**.
+  - **Probabilidad:** Baja (Es más difícil de ejecutar).
+  - **Impacto:** Crítico (El atacante se adueña del servidor completo).
+  - **Nivel de Riesgo:** **ALTO (Naranja)**.

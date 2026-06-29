@@ -1,14 +1,8 @@
-# 2. Vulnerabilidad: Inyección SQL (SQLi)
-**Gravedad CVSS v3.1:** Crítica (9.8)
+# Activos de Información y Riesgos
+Para la Universidad del Pacífico, el verdadero valor no está en los servidores físicos, sino en la información que guardan. Lo más crítico que debemos proteger es:
 
-## Descripción Técnica
-El portal web presenta una vulnerabilidad de Inyección SQL en sus formularios de entrada. El sistema toma lo que escribe el usuario y lo concatena directamente en la consulta de la base de datos sin sanitizar. Esto permite ingresar cargas útiles (payloads) como `1' or '1'='1` para saltarse la autenticación o extraer tablas completas.
+1. **El Registro Académico:** Aquí están todas las notas y ramos de los alumnos. Si un atacante modifica esto, la universidad pierde toda su credibilidad.
+2. **Plataforma de Pagos:** Es por donde entran las matrículas y mensualidades. Un fallo aquí afecta directamente las finanzas de la institución.
+3. **Datos Personales:** Direcciones, RUT y correos de toda la comunidad estudiantil y docente.
 
-## Impacto en Universidad del Pacífico
-Al ser una institución de educación superior, el impacto de negocio es catastrófico. Un atacante podría:
-* Extraer o secuestrar la base de datos completa.
-* Alterar el registro curricular y modificar notas de los alumnos.
-* Acceder a información financiera confidencial sobre los pagos de aranceles y matrículas.
-
-## Prevención y Mitigación
-A nivel de código, la solución definitiva es reescribir las consultas utilizando **Consultas Parametrizadas (Prepared Statements)**, lo que separa estrictamente la estructura SQL de los datos ingresados por el usuario. Como medida complementaria, se debe implementar un WAF (Web Application Firewall).
+Si alguien logra vulnerar estos datos, el daño a la reputación sería enorme, sin contar los problemas legales por la ley de protección de datos.

@@ -1,8 +1,8 @@
-# 5. Activos y Riesgos del Negocio
-Para la Universidad del Pacífico, los activos más valiosos no son solo los equipos físicos, sino la información crítica que maneja el portal web. Los principales activos identificados son:
+# Activos de Información y Riesgos
+Para la Universidad del Pacífico, el verdadero valor no está en los servidores físicos, sino en la información que guardan. Lo más crítico que debemos proteger es:
 
-1. **Base de Datos Curricular:** Contiene todas las notas, ramos inscritos y el historial académico de los alumnos. Si esto se altera, la universidad pierde por completo su integridad académica.
-2. **Portal de Pagos y Aranceles:** Es el flujo de caja. Por aquí ingresan los pagos de matrículas y mensualidades.
-3. **Datos Personales Sensibles:** Fichas con información privada, direcciones, RUT y datos de contacto de estudiantes y docentes.
+1. **El Registro Académico:** Aquí están todas las notas y ramos de los alumnos. Si un atacante modifica esto, la universidad pierde toda su credibilidad.
+2. **Plataforma de Pagos:** Es por donde entran las matrículas y mensualidades. Un fallo aquí afecta directamente las finanzas de la institución.
+3. **Datos Personales:** Direcciones, RUT y correos de toda la comunidad estudiantil y docente.
 
-Un ataque exitoso a estos activos generaría un daño reputacional inmenso, fuga de alumnos y problemas legales gravísimos por la ley de protección de datos.
+Si alguien logra vulnerar estos datos, el daño a la reputación sería enorme, sin contar los problemas legales por la ley de protección de datos.

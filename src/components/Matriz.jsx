@@ -11,14 +11,14 @@ function Matriz() {
       </div>
 
       <p className="text-slate-600 mb-6">
-        Clasificación de vulnerabilidades cruzando probabilidad de explotación versus impacto operacional en E05:
+        Evaluación de impacto operacional y probabilidad de explotación en la Universidad del Pacífico:
       </p>
 
       <div className="space-y-4">
         <div className="flex items-center justify-between p-4 border rounded-md border-red-200 bg-red-50">
           <div>
             <h3 className="font-bold text-red-900">Inyección SQL (SQLi)</h3>
-            <p className="text-sm text-red-700">Probabilidad: Media | Impacto: Crítico (Compromiso total BD)</p>
+            <p className="text-sm text-red-700">Probabilidad: Media | Impacto: Crítico (Compromiso total de la base de datos curricular)</p>
           </div>
           <span className="bg-red-600 text-white px-3 py-1 rounded font-bold text-sm">EXTREMO</span>
         </div>
@@ -26,7 +26,7 @@ function Matriz() {
         <div className="flex items-center justify-between p-4 border rounded-md border-orange-200 bg-orange-50">
           <div>
             <h3 className="font-bold text-orange-900">Cross-Site Scripting (XSS)</h3>
-            <p className="text-sm text-orange-700">Probabilidad: Alta | Impacto: Alto (Robo de sesiones de docentes)</p>
+            <p className="text-sm text-orange-700">Probabilidad: Alta | Impacto: Alto (Suplantación de identidad de docentes)</p>
           </div>
           <span className="bg-orange-500 text-white px-3 py-1 rounded font-bold text-sm">ALTO</span>
         </div>

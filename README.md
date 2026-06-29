@@ -1,16 +1,28 @@
-# React + Vite
+# Auditoría Durjos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto alumno Josue Durand Palacios de INACAP que presenta un informe web de auditoría de seguridad.
 
-Currently, two official plugins are available:
+Incluye secciones de resumen, inyección SQL, XSS y comando de inyección con contenido gráfico y evidencias.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Construido con React y Vite para la asignatura Fundamentos de Seguridad de la Información.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Cómo ejecutar
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Link Directo(Vercer) para ingresar:
+
+- Vercel: https://auditoria-durjos.vercel.app/
+
+## Pasos para correr la app en local:
+1. Abrir terminal en la carpeta del proyecto.
+2. Ejecutar `npm install`.
+3. Ejecutar `npm run dev`.
+4. Abrir el navegador en `http://localhost:5173/`.
+
+## Enlaces
+
+- Local: `http://localhost:5173/`
+
+
+

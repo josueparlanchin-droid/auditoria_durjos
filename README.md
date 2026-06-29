@@ -12,7 +12,7 @@ Construido con React y Vite para la asignatura Fundamentos de Seguridad de la In
 
 ## Link Directo(Vercer) para ingresar:
 
-- Vercel: https://auditoria-durjos.vercel.app/
+- Vercel: https://auditoriadurjos2026.vercel.app/
 
 ## Pasos para correr la app en local:
 1. Abrir terminal en la carpeta del proyecto.

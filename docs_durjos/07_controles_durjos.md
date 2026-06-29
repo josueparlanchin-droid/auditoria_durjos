@@ -1,6 +1,7 @@
-# 7. Políticas de Prevención y Mitigación
-Para evitar quedar expuestos, la universidad debe implementar estas políticas de seguridad en su ciclo de desarrollo de forma obligatoria:
+# 7. Controles de Mitigación
 
-* **Consultas Parametrizadas:** Queda estrictamente prohibido concatenar texto directo en el código fuente. Se deben usar *Prepared Statements* para separar los comandos SQL de lo que escribe el usuario, matando la inyección SQL de raíz.
-* **Sanitización y Codificación:** Todo dato que ingrese por formulario debe ser filtrado, y todo lo que se muestre en pantalla debe usar *HTML Entity Encoding*. Así el navegador no ejecutará scripts XSS maliciosos.
-* **Implementación de WAF:** Colocar un Web Application Firewall por delante del portal para que detecte y bloquee tráfico anómalo, como intentos de ejecutar comandos del sistema operativo.
+Para proteger los activos de la Universidad del Pacífico frente a las vulnerabilidades encontradas, se deben implementar los siguientes controles técnicos:
+
+1. **Mitigación para Inyección SQL:** Implementar el uso estricto de **consultas parametrizadas (Prepared Statements)** o un ORM (Object-Relational Mapping) en el backend del portal de alumnos. Esto asegura que la base de datos trate las entradas (como el rut para ver las notas) como datos literales y nunca como sentencias ejecutables.
+2. **Mitigación para XSS:** Aplicar **codificación de salida (Output Encoding)** en todas las variables que se renderizan en el HTML (convertir caracteres especiales en entidades HTML). Además, configurar las cookies de sesión con las banderas `HttpOnly` y `Secure` para evitar que un script malicioso pueda robar los identificadores de sesión de los docentes o estudiantes.
+3. **Mitigación para Command Injection:** Reemplazar la ejecución directa de comandos del sistema operativo (como `exec()` o `system()`) por **APIs nativas del lenguaje de programación**. Adicionalmente, implementar validación de entrada mediante listas blancas (Whitelisting), asegurando que solo se acepten formatos estrictos (ej. solo números y puntos para una dirección IP).

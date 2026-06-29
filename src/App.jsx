@@ -1,8 +1,8 @@
 import React from 'react';
 import { Shield } from 'lucide-react';
 import Resumen from './components/Resumen';
-import Sqli from './components/Sqli';
-import Xss from './components/Xss';
+import Sqli from './components/InyeccionSQL';
+import Xss from './components/XSS';
 import Comandos from './components/Comandos';
 
 function App() {

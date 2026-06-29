@@ -1,10 +1,6 @@
 import React from 'react';
 import { Shield } from 'lucide-react';
-import Resumen from './components/Resumen';
-import Sqli from './components/InyeccionSQL';
-import Xss from './components/XSS';
-import Comandos from './components/Comandos';
-import Promps from './components/Promps'; // Asegúrate de tener este componente creado
+import Mother from './components/Mother';
 
 function App() {
   return (
@@ -48,11 +44,7 @@ function App() {
 
         {/* Renderizado de Secciones */}
         <section className="space-y-6">
-          <Resumen />
-          <Sqli />
-          <Xss />
-          <Comandos />
-          <Promps /> {/* Bitácora integrada */}
+          <Mother />
         </section>
       </main>
 
